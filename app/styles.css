@@ -1,0 +1,236 @@
+/*element styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+.quick {
+  font-size: 2.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  margin-top: 6px;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #333333;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+  padding: 48px 64px;
+  height: 2000px;
+}
+/*end of element styling*/
+.hidden {
+  display: none !important;
+}
+/*Main Layout */
+.header {
+  margin: 40px, 0, 40px, 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1020px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .header div,
+  .header p {
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  body {
+    padding: 16px 32px;
+  }
+}
+
+.post-content {
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #555555;
+  margin-bottom: 16px;
+  padding: 16px 30px 16px 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  letter-spacing: -1px;
+}
+@media (max-width: 1200px) {
+  .post-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn-open {
+    margin-top: 24px;
+  }
+}
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+  margin-top: 30px;
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+/*END of Main Layout */
+.logo img {
+  height: 68px;
+  width: 68px;
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Coiny", sans-serif;
+  padding: 3px 12px 0px 12px;
+  color: black;
+  border-radius: 30px;
+}
+.tag:hover {
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.quote {
+  display: flex;
+  font-family: "Coiny";
+  font-size: 21px;
+  margin-left: 25px;
+}
+@media (max-width: 800px) {
+  .logo {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.post-buttons {
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  gap: 9px;
+}
+.post-buttons button {
+  border: none;
+  background-color: rgb(179, 179, 179);
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-family: "Coiny" sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.post-buttons button:hover {
+  background-color: #333333;
+}
+.source:link,
+.source:visited {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(
+    135deg,
+    #ff6961,
+    #ffb480,
+    #f8f38d,
+    #42d6a4,
+    #08cad1,
+    #59adf6,
+    #9d94ff,
+    #c780e8
+  );
+  transition: 0.3s;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+.btn-all-categories {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+.category {
+  margin-bottom: 16px;
+}
+
+/*FORM*/
+.form input,
+.form select {
+  background-color: rgb(179, 179, 179);
+  width: 220px;
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+  font-family: inherit;
+  color: black;
+}
+.form input:first-child {
+  flex-grow: 1;
+}
+.form input::placeholder {
+  color: #555555;
+}
+.form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
+form {
+  background-color: #555555;
+  margin: 40px 0;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 32px, 48px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form input,
+  .form select {
+    width: auto;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Document</title>
+    <!--font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--font import end-->
+    <link rel="icon" href="images/fa" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--NAVIGATION-->
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="images/letter-u-svgrepo-com.svg"
+            alt="logo"
+            width="68px"
+            height="68px"
+          />
+          <h1>Query</h1>
+          <p class="quote" style="margin-left: 25px">
+            "An Answer for 'U' and 'U'r Queries"
+          </p>
+        </div>
+        <button class="btn btn-large btn-open">Share wisdom</button>
+      </header>
+      <!--END OF NAVIGATION-->
+
+      <!--User Interface-Form-->
+      <form class="form hidden" action="">
+        <input type="text" placeholder="Share your programming knowledge..." />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy source" />
+        <select name="" id="">
+          <option value="">Choose Category</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+      <!--End of User Interface-Form-->
+
+      <!--Side Bar-->
+      <main class="main">
+        <aside>
+          <ul>
+            <li><button class="btn btn-all-categories">All</button></li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ff6961"
+              >
+                Java
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ffb480"
+              >
+                Python
+              </button>
+            </li>
+          </ul>
+        </aside>
+        <!--End Of Side Bar-->
+
+        <!--Main Content-->
+        <section>
+          <ul class="posts-list">
+            <li class="post-content">
+              <p>
+                The reverse() method of StringBuilder is used to reverse the
+                characters in the StringBuilder. The method helps to this
+                character sequence to be replaced by the reverse of the
+                sequence. Syntax: public java.lang.AbstractStringBuilder
+                reverse()
+                <a
+                  class="source"
+                  href="https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/"
+                  target="_blank"
+                  >(Source)
+                </a>
+              </p>
+              <span class="tag">Java</span>
+              <div class="post-buttons">
+                <button>👍 6</button>
+                <button>🤯 1</button>
+                <button>⛔️ 1</button>
+              </div>
+            </li>
+
+            <li class="post-content">
+              <p>
+                The original name for Java was said to be Oak, named by the Java
+                legend
+                <a
+                  class="source"
+                  href="https://www.besanttechnologies.com/15-unbelievable-facts-java#:~:text=The%20original%20name%20for%20Java,company%20with%20registered%20name%20Oak."
+                  target="_blank"
+                  >(Source)
+                </a>
+              </p>
+              <span class="tag">Java</span>
+              <div class="post-buttons">
+                <button>👍 28</button>
+                <button>🤯 8</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <!--End Of Main Content-->
+    <script src="script.js"></script>
+  </body>
+</html>
