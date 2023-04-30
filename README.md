@@ -4,6 +4,7 @@
 A very simple (react front end | supabase backend) application made by me in around Febraury 2023.
 I tried making something similar to stackoverflow. Even making the slogan code-related instead of JQuery you have UQuery-"An Answer for 'U' and 'U'r Queries"
 Deployed on netlify https://uquery.netlify.app/
+*If you are creating a post, please use the following format only for trustworthy source placeholder: " http://example.com ".
 
 ## Getting Started
 
